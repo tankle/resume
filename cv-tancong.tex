@@ -30,7 +30,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot[L]{\footnotesize\textit{谭聪个人简历}}
-\fancyfoot[C]{\footnotesize\thepage/\pageref{LastPage}}
+%\fancyfoot[C]{\footnotesize\thepage/\pageref{LastPage}}
 \fancyfoot[R]{\footnotesize\textit{Last updated: \today}}
 
 \usepackage[UKenglish]{datetime}
@@ -50,8 +50,9 @@
 %\phone[fixed]{+86~027~6875~5072} % optional
 %\phone[fax]{+86~027~6875~4150} % optional
 \email{viptancong@gmail.com}
-\homepage{tankle120.github.io}
-\extrainfo{2015年应届生}
+\homepage{tankle.github.io}
+\social[github]{tankle}   
+%\extrainfo{2015年应届生}
 %\photo[64pt][0.4pt]{picture}
 %\quote{{\footnotesize Last updated: \today}}
 
@@ -78,22 +79,22 @@
 
 
 \section{教育背景}
-\cventry{2013--至今}{硕士 \textnormal{(计算机科学与技术)}}{哈尔滨工业大学深圳研究生院}{}{}{导师: 王晓龙教授 \newline 研究方向: 自然语言处理，机器学习}
+\cventry{2013--至今}{硕士 \textnormal{(计算机科学与技术)}}{哈尔滨工业大学深圳研究生院}{GPA: 专业前15\%(15/118)}{}{导师: 王晓龙教授 \newline 研究方向: 自然语言处理，机器学习 \newline 毕业时间：2015年12月}
 \cventry{2009--2013}{学士}{杭州电子科技大学}{}{}{}
 
 
 \section{研究项目}
-\cvitem{NTCIR-11 Temporalia}{时间敏感查询评测，评测结果获得国际第二, 发表论文《HITSZ-ICRC at NTCIR-11 Temporalia Task》}
-\cvitem{SemEval-2015 task3}{社区问答中答案选择任务(Answer Selection in Community Question Answering)，包含两种语言：Arabic和English。在Arabic子任务中，我们组（HITSZ-ICRC）取得了第三名，在English子任务中，获得了第二名。}
-\cvitem{SemEval-2015 task5}{问答系统中时间评价问题(QA TempEval)}
+\cvitem{NTCIR-11 Temporalia}{时间信息检索评测，是在搜索引擎的搜索过程中，考虑查询时间和结果文档中的时间信息，使得搜索结果更加准确。我们的评测结果获得国际第二, 并发表论文《HITSZ-ICRC at NTCIR-11 Temporalia Task》}
+\cvitem{SemEval-2015 task3}{社区问答中答案选择任务(Answer Selection in Community Question Answering)，是指在社区问答中，对每个问题的答案的好坏进行判定。该任务包含两种语言：Arabic和English。在Arabic子任务中，我们组（HITSZ-ICRC）取得了第三名，在English子任务中，获得了第二名。}
+\cvitem{SemEval-2015 task5}{QA TempEval 是指以问答的方式来评价对文本中时间信息的理解程度。主要涉及三个方面：1. 文本中时间的抽取和归一化，2. 事件的抽取， 3. 事件和时间、事件与事件之间关系的抽取。}
 %\cvitem{Teaching}{All Mathematics Courses for Economics (U/G), Mathematical Economics (U/G), Game Theory and Information Economics (U/G), Microeconomics (U/G), Econometrics (U), Macroeconomics (U)}
 
 
-\section{已发表论文}
+%\section{已发表论文}
 %, Yongshuai Hou, Xiaolong Wang, Qingcai Chen, Man Li, Cong Tan - , 2014.Machine Learning and Cybernetics 481, 
-\cvitem{\hello}{\href{http://link.springer.com/chapter/10.1007\%2F978-3-662-45652-1_6}{User Input Classification for Chinese Question Answering System}, Yongshuai Hou, Xiaolong Wang, Qingcai Chen, Man Li,\textbf{ Cong Tan }, \textit{Machine Learning and Cybernetics}, 481 (2014), 52-59}
+%\cvitem{\hello}{\href{http://link.springer.com/chapter/10.1007\%2F978-3-662-45652-1_6}{User Input Classification for Chinese Question Answering System}, Yongshuai Hou, Xiaolong Wang, Qingcai Chen, Man Li,\textbf{ Cong Tan }, \textit{Machine Learning and Cybernetics}, 481 (2014), 52-59}
 %HITSZ-ICRC at NTCIR-11 Temporalia Task, Yongshuai Hou, Cong Tan, Jun Xu, Youcheng Pan, Qingcai Chen, Xiaolong Wang - Proceedings of the 11th NTCIR Conference, Tokyo, 2014.
-\cvitem{\hello}{\href{http://research.nii.ac.jp/ntcir/workshop/OnlineProceedings11/pdf/NTCIR/Temporalia/07-NTCIR11-TEMPORALIA-HouY.pdf}{HITSZ-ICRC at NTCIR-11 Temporalia Task}, Yongshuai Hou, \textbf{Cong Tan}, Jun Xu, Youcheng Pan, Qingcai Chen, Xiaolong Wang, \textit{Proceedings of the 11th NTCIR Conference, Tokyo}, 2014, 468-473}
+%\cvitem{\hello}{\href{http://research.nii.ac.jp/ntcir/workshop/OnlineProceedings11/pdf/NTCIR/Temporalia/07-NTCIR11-TEMPORALIA-HouY.pdf}{HITSZ-ICRC at NTCIR-11 Temporalia Task}, Yongshuai Hou, \textbf{Cong Tan}, Jun Xu, Youcheng Pan, Qingcai Chen, Xiaolong Wang, \textit{Proceedings of the 11th NTCIR Conference, Tokyo}, 2014, 468-473}
 
 
 %\section{Working Papers}
@@ -110,21 +111,29 @@
 
 \section{专业技能 }
 \cvitem{\hello}{熟悉主要的数据结构和算法，本科期间获得浙江省第八届程序设计竞赛（ACM）铜牌。}
-\cvitem{\hello}{了解常用机器学习算法、自然语言处理等相关技术；熟练使用机器学习工具：libsvm，scikit-learn，weka等；对于深度学习有一定的了解，会使用theano。}
-\cvitem{\hello}{熟悉C++、Java、python等编程语言；}
+\cvitem{\hello}{了解常用机器学习算法、自然语言处理等相关技术；熟练使用机器学习工具：libsvm，scikit-learn，weka等。}
+\cvitem{\hello}{熟悉C++、Java、Python  等编程语言；}
 \cvitem{\hello}{熟悉Linux环境，掌握Linux下常用命令及开发调试方法，熟悉git等版本管理工具}
 
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\renewcommand{\refname}{论文}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}    
 
-\section{所获奖励 }
-\cvitem{2013-09}{哈尔滨工业大学深圳研究生院特等奖学金}
+\section{所获奖励 和 证书 }
 \cvitem{2014-10}{哈尔滨工业大学深圳研究生院一等奖学金}
 \cvitem{2014-10}{哈尔滨工业大学深圳研究生院三好学生}
-
-
-\section{证书}
+\cvitem{2013-09}{哈尔滨工业大学深圳研究生院特等奖学金}
 \cvitem{2010-12}{英语四级}
 
-
+\section{校园实践}
+\cvitem{2014.01-2014.12}{深圳大学城微软技术俱乐部技术部部长，在担任技术部部长期间，组织了多次俱乐部活动，还获邀参加了2014年微软夏令营。}
+\cvitem{2013.09-2014.09}{哈工大深圳研究生院研究生会学术部成员，组织过多项校内活动，比如辩论赛、科技展、主持人大赛等，还主持过主持人大赛。}
+	
+                    % 'publications' is the name of a BibTeX file
 
 %\section{References}
 %\cvitem{}{Available upon request}
