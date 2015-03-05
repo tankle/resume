@@ -1,0 +1,136 @@
+\documentclass[10pt,a4paper,roman]{moderncv}
+
+% moderncv themes
+% classic casual
+\moderncvstyle{classic}
+% orange、green、red、purple、grey、black
+\moderncvcolor{black}
+%\renewcommand{\familydefault}{\sfdefault}
+%\nopagenumbers{}
+
+% character encoding
+%\usepackage[utf8]{inputenc}
+%\usepackage{CJKutf8}
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{0.12\textwidth}
+%\setlength{\makecvtitlenamewidth}{10cm}
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xeCJK}
+\setmainfont{Minion Pro}
+\setsansfont{Myriad Pro}
+\setCJKmainfont{Adobe Kaiti Std}
+%\setCJKmainfont{STKaiti}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{\footnotesize\textit{谭聪个人简历}}
+\fancyfoot[C]{\footnotesize\thepage/\pageref{LastPage}}
+\fancyfoot[R]{\footnotesize\textit{Last updated: \today}}
+
+\usepackage[UKenglish]{datetime}
+\newdateformat{UKvardate}{%
+\THEDAY\ \monthname[\THEMONTH] \THEYEAR}
+\UKvardate
+
+\usepackage{manfnt}
+
+\newcommand{\hello}{{\tiny\textdbend}}
+
+% personal data
+\name{谭}{聪}
+% \title{Curriculum Vitae}
+\address{深圳市南山区西丽大学城}{哈尔滨工业大学深圳研究生院计算机学院C栋}
+\phone[mobile]{+86~159~9964~5033}
+%\phone[fixed]{+86~027~6875~5072} % optional
+%\phone[fax]{+86~027~6875~4150} % optional
+\email{viptancong@gmail.com}
+\homepage{tankle120.github.io}
+\extrainfo{2015年应届生}
+%\photo[64pt][0.4pt]{picture}
+%\quote{{\footnotesize Last updated: \today}}
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\AfterPreamble{\hypersetup{
+    pdfstartview={XYZ null null 1.00},
+    baseurl={}
+}}
+
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+\section{教育背景}
+\cventry{2013--至今}{硕士 \textnormal{(计算机科学与技术)}}{哈尔滨工业大学深圳研究生院}{}{}{导师: 王晓龙教授 \newline 研究方向: 自然语言处理，机器学习}
+\cventry{2009--2013}{学士}{杭州电子科技大学}{}{}{}
+
+
+\section{研究项目}
+\cvitem{NTCIR-11 Temporalia}{时间敏感查询评测，评测结果获得国际第二, 发表论文《HITSZ-ICRC at NTCIR-11 Temporalia Task》}
+\cvitem{SemEval-2015 task3}{社区问答中答案选择任务(Answer Selection in Community Question Answering)，包含两种语言：Arabic和English。在Arabic子任务中，我们组（HITSZ-ICRC）取得了第三名，在English子任务中，获得了第二名。}
+\cvitem{SemEval-2015 task5}{问答系统中时间评价问题(QA TempEval)}
+%\cvitem{Teaching}{All Mathematics Courses for Economics (U/G), Mathematical Economics (U/G), Game Theory and Information Economics (U/G), Microeconomics (U/G), Econometrics (U), Macroeconomics (U)}
+
+
+\section{已发表论文}
+%, Yongshuai Hou, Xiaolong Wang, Qingcai Chen, Man Li, Cong Tan - , 2014.Machine Learning and Cybernetics 481, 
+\cvitem{\hello}{\href{http://link.springer.com/chapter/10.1007\%2F978-3-662-45652-1_6}{User Input Classification for Chinese Question Answering System}, Yongshuai Hou, Xiaolong Wang, Qingcai Chen, Man Li,\textbf{ Cong Tan }, \textit{Machine Learning and Cybernetics}, 481 (2014), 52-59}
+%HITSZ-ICRC at NTCIR-11 Temporalia Task, Yongshuai Hou, Cong Tan, Jun Xu, Youcheng Pan, Qingcai Chen, Xiaolong Wang - Proceedings of the 11th NTCIR Conference, Tokyo, 2014.
+\cvitem{\hello}{\href{http://research.nii.ac.jp/ntcir/workshop/OnlineProceedings11/pdf/NTCIR/Temporalia/07-NTCIR11-TEMPORALIA-HouY.pdf}{HITSZ-ICRC at NTCIR-11 Temporalia Task}, Yongshuai Hou, \textbf{Cong Tan}, Jun Xu, Youcheng Pan, Qingcai Chen, Xiaolong Wang, \textit{Proceedings of the 11th NTCIR Conference, Tokyo}, 2014, 468-473}
+
+
+%\section{Working Papers}
+%\cvitem{\hello}{Another impossibility theorem of unawareness (with Xiao~Luo and Ben~Wang)}
+%\cvitem{\hello}{Bayesian game-correlated information and infinite actions (with Wei~He, Yeneng~Sun and Yishu Zeng)}
+%\cvitem{\hello}{Perfect equilibria in large games with infinitely many actions (with Yeneng~Sun and Yishu Zeng)}
+%\cvitem{\hello}{Distributional, randomized and pure strategy Nash equilibria in large games (with Haomiao~Yu)}
+%\cvitem{\hello}{Equilibrium, core and insurance equilibrium in a private information economy (with Yeneng~Sun, Lei~Wu and Nicholas~C.~Yannelis)}
+%\cvitem{\hello}{Independent random partial matching with general types}
+%\cvitem{\hello}{Independent random partial matching with general types: dynamic case}
+%\cvitem{\hello}{Modeling infinitely many agents (with Wei~He and Yeneng~Sun)}
+
+
+
+\section{专业技能 }
+\cvitem{\hello}{熟悉主要的数据结构和算法，本科期间获得浙江省第八届程序设计竞赛（ACM）铜牌。}
+\cvitem{\hello}{了解常用机器学习算法、自然语言处理等相关技术；熟练使用机器学习工具：libsvm，scikit-learn，weka等；对于深度学习有一定的了解，会使用theano。}
+\cvitem{\hello}{熟悉C++、Java、python等编程语言；}
+\cvitem{\hello}{熟悉Linux环境，掌握Linux下常用命令及开发调试方法，熟悉git等版本管理工具}
+
+
+\section{所获奖励 }
+\cvitem{2013-09}{哈尔滨工业大学深圳研究生院特等奖学金}
+\cvitem{2014-10}{哈尔滨工业大学深圳研究生院一等奖学金}
+\cvitem{2014-10}{哈尔滨工业大学深圳研究生院三好学生}
+
+
+\section{证书}
+\cvitem{2010-12}{英语四级}
+
+
+
+%\section{References}
+%\cvitem{}{Available upon request}
+%\cvitem{Reference~1}{Professor~Yeneng~Sun, Raffles Professor of Social Sciences, National University of Singapore \newline Department of Economics, National University of Singapore, 117570, Singapore \newline Phone: +65~6516~3941; E-mail: ynsun@nus.edu.sg}
+%\cvitem{Reference~2}{Professor~Xiao~Luo, Associate~Professor, National University of Singapore \newline Department of Economics, National University of Singapore, 117570, Singapore \newline Phone: +65~6516~6231; E-mail: ecslx@nus.edu.sg}
+%\cvitem{Reference~3}{Professor~Nicholas~C.~Yannelis, Henry B. Tippie Research Professor of Economics, University of Iowa \newline Department of Economics, Henry B. Tippie College of Business, \newline University of Iowa, Iowa City, IA 52242, United States \newline Phone: +1~319~335~2290; E-mail: nicholasyannelis@gmail.com}
+
+
+\end{document} 
