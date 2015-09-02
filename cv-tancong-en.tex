@@ -1,0 +1,157 @@
+\documentclass[10pt,a4paper,roman]{moderncv}
+
+% moderncv themes
+% classic casual
+\moderncvstyle{classic}
+% orange,green,red,purple,grey,black
+\moderncvcolor{black}
+%\renewcommand{\familydefault}{\sfdefault}
+%\nopagenumbers{}
+
+% character encoding
+%\usepackage[utf8]{inputenc}
+%\usepackage{CJKutf8}
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{0.12\textwidth}
+%\setlength{\makecvtitlenamewidth}{10cm}
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xeCJK}
+\setmainfont{Minion Pro}
+\setsansfont{Myriad Pro}
+\setCJKmainfont{Adobe Kaiti Std}
+%\setCJKmainfont{STKaiti}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{\footnotesize\textit{Cong Tan's Curriculum Vitae}}
+%\fancyfoot[C]{\footnotesize\thepage/\pageref{LastPage}}
+\fancyfoot[R]{\footnotesize\textit{Last updated: \today}}
+
+\usepackage[UKenglish]{datetime}
+\newdateformat{UKvardate}{%
+\THEDAY\ \monthname[\THEMONTH] \THEYEAR}
+\UKvardate
+
+\usepackage{manfnt}
+
+\newcommand{\hello}{{\tiny\textdbend}}
+
+% personal data
+\name{Cong}{Tan(谭聪)}
+\title{Curriculum Vitae}
+\address{Harbin Institute of Technology}{Xili University Town, Shenzhen, 518055, China}
+\phone[mobile]{+86~159~9964~5033}
+%\phone[fixed]{+86~027~6875~5072} % optional
+%\phone[fax]{+86~027~6875~4150} % optional
+
+\email{viptancong@163.com}
+\homepage{tankle.github.io}
+\social[github]{tankle}   
+
+\extrainfo{Birthday: 1990-12 \\ Male}
+
+%\photo[64pt][0.4pt]{tan.jpg}
+%\quote{{\footnotesize Last updated: \today}}
+\quote{{ Natural Language Processing Engineer}}
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+% 显示论文编号
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\AfterPreamble{\hypersetup{
+    pdfstartview={XYZ null null 1.00},
+    baseurl={}
+}}
+
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+\section{Education}
+\cventry{2013.09--2016.01}{Master in Computer Science and Technology }{Shenzhen Graduate School of HIT}{GPA: 3.516 }{}{Advisor: \emph{Prof. Wang Xiaolong}
+	\newline Research: Question Answering, Information Retrieval, Machine Learning, Natural Language Processing }
+\cventry{2009.09--2013.07}{B.S in Computer Science and Technology}{Hangzhou Dianzi University}{GPA:TOP 15 \%}{}{}
+
+
+\section{Research Program}
+\cvitem{NTCIR-11 Temporalia}{ Temporal Information Retrieval task's objective is to foster research in temporal information access. The result of document retrieval are content relative , also temporal correlation. Our result get the second among all the teams, and publish a paper\cite{hou2014hitsz}.
+\newline	Major work: First, using Solr to indexing the documents and searching every query; Second, extracting some text features between query and documents searched by Solr; Last, Adopt Learning to Rank algorithm to re-ranking the result to get the final documents list.
+\newline 	Light spot: 1. classify the query by its temporal property as four categories(Last, recency, future, atemporal); 
+\newline 	2. Take the time information of querys into account when re-ranking the candidate result list. }
+\cvitem{SemEval-2015 task3}{Answer Selection in Community Question Answering is judge the quality of each answers of the questions in CQA. This task include two languages, Arabic and English. Our team got the second and third in English and Arabic task separately. \cite{hou-EtAl:2015:SemEval1}。
+\newline	Major work: extract text features, includeing: Bag-of-words, tf-idf, co-occurrence words between question and answer and word2vec; then design the classify algorithms.
+\newline 	Light spot: 1. Against the unbalanced train data (Good, Potential, Bad, Dialogue ), we design different methods to balance it.
+\newline 2. Design two-level hierarchical classification method, integrate Random Forest and SVM. }
+\cvitem{SemEval-2015 task5}{QA TempEval is a temporal information extraction task. But use QA to evaluate temporal information understanding. Major works: 1. extract the temporal expressions and normalized , 2. extract events,  3. extract the temporal relations. \cite{hou-EtAl:2015:SemEval2}。
+	\newline Light spot:  using bagging method to merging the different annotated results.}
+
+\cvitem{Github}{1. Chinese Word Segmentation tools based HMM model in python;
+\newline 2. Implement the common machine learning algorithms, like SVM, Adaboost, kmeans, LDA and so on;
+\newline 3. Pull requests for some projects, like Stanford CoreNLP, timeml-qa, caevo, mainly fix the bugs and improve it. }
+
+%\section{已发表论文}
+%, Yongshuai Hou, Xiaolong Wang, Qingcai Chen, Man Li, Cong Tan - , 2014.Machine Learning and Cybernetics 481, 
+%\cvitem{\hello}{\href{http://link.springer.com/chapter/10.1007\%2F978-3-662-45652-1_6}{User Input Classification for Chinese Question Answering System}, Yongshuai Hou, Xiaolong Wang, Qingcai Chen, Man Li,\textbf{ Cong Tan }, \textit{Machine Learning and Cybernetics}, 481 (2014), 52-59}
+%HITSZ-ICRC at NTCIR-11 Temporalia Task, Yongshuai Hou, Cong Tan, Jun Xu, Youcheng Pan, Qingcai Chen, Xiaolong Wang - Proceedings of the 11th NTCIR Conference, Tokyo, 2014.
+%\cvitem{\hello}{\href{http://research.nii.ac.jp/ntcir/workshop/OnlineProceedings11/pdf/NTCIR/Temporalia/07-NTCIR11-TEMPORALIA-HouY.pdf}{HITSZ-ICRC at NTCIR-11 Temporalia Task}, Yongshuai Hou, \textbf{Cong Tan}, Jun Xu, Youcheng Pan, Qingcai Chen, Xiaolong Wang, \textit{Proceedings of the 11th NTCIR Conference, Tokyo}, 2014, 468-473}
+
+
+
+
+\section{Professional Skills }
+\cvitem{\hello}{Master in C++, Java,Python programming language}
+\cvitem{\hello}{Master in major Data Structure and algorithms. Awarded the bronze medal of the 8th ACM programming contest in Zhejiang province. }
+\cvitem{\hello}{Master in major Machine Learning Algorithms, Nature Language Processing technology and interest in Deep Learning. }
+\cvitem{\hello}{Familiar with Linux environment , know about common commands and know well about version manager tool , such as git. }
+
+
+\section{Awards and Grants }
+\cvitem{2014-10}{First-class scholarship of  Shenzhen Graduate School of HIT}
+\cvitem{2014-10}{"Three Good" student of Shenzhen Graduate School of HIT}
+\cvitem{2013-09}{School principal level scholarship of Shenzhen Graduate School of HIT}
+%\cvitem{2010-12}{英语四级}
+
+\section{Campus practice}
+\cvitem{2014.12.5-9}{As a volunteer of the conference on Natural Language Processing and Chinese Computing(NLPCC) 2014 and CCF Advanced Disciplines Lectures(ADL)}
+\cvitem{2014.01-2014.12}{Minister of MSTC (Microsoft Technology Club) of Shenzhen University Town 
+	\newline I have organized many activities for club members and take part in Microsoft Summer camp in 2014.}
+\cvitem{2013.09-2014.09}{As the member of the Student Union of  Shenzhen Graduate School of HIT, organizes many activities, like debate competitions, science fair and as the host of campus host contest.  }
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% plain  ieeetr apalike abbrv alpha 
+
+\renewcommand{\refname}{Publications}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}   
+
+
+% 'publications' is the name of a BibTeX file
+
+%\section{References}
+%\cvitem{}{Available upon request}
+%\cvitem{Reference~1}{Professor~Yeneng~Sun, Raffles Professor of Social Sciences, National University of Singapore \newline Department of Economics, National University of Singapore, 117570, Singapore \newline Phone: +65~6516~3941; E-mail: ynsun@nus.edu.sg}
+%\cvitem{Reference~2}{Professor~Xiao~Luo, Associate~Professor, National University of Singapore \newline Department of Economics, National University of Singapore, 117570, Singapore \newline Phone: +65~6516~6231; E-mail: ecslx@nus.edu.sg}
+%\cvitem{Reference~3}{Professor~Nicholas~C.~Yannelis, Henry B. Tippie Research Professor of Economics, University of Iowa \newline Department of Economics, Henry B. Tippie College of Business, \newline University of Iowa, Iowa City, IA 52242, United States \newline Phone: +1~319~335~2290; E-mail: nicholasyannelis@gmail.com}
+
+
+\end{document} 

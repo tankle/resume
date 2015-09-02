@@ -58,7 +58,7 @@
 
 %\photo[64pt][0.4pt]{tan.jpg}
 %\quote{{\footnotesize Last updated: \today}}
-\quote{{ 求职意向：算法工程师}}
+\quote{{ 求职意向：自然语言处理工程师}}
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 % 显示论文编号
@@ -84,18 +84,25 @@
 
 
 \section{教育背景}
-\cventry{2013--至今}{硕士 \textnormal{(计算机科学与技术)}}{哈尔滨工业大学深圳研究生院}{GPA: 3.516 专业前15\%(15/118)}{}{导师: 王晓龙教授 \newline 研究方向:问答系统，信息检索，机器学习，自然语言处理 \newline 毕业时间：2015年12月}
+\cventry{2013--至今}{硕士 \textnormal{(计算机科学与技术)}}{哈尔滨工业大学深圳研究生院}{GPA: 3.516 专业前15\%(15/118)}{}{导师: 王晓龙教授 \newline 研究方向:问答系统，信息检索，机器学习，自然语言处理 \newline 毕业时间：2016年01月}
 \cventry{2009--2013}{学士 \textnormal{(计算机科学与技术)}}{杭州电子科技大学}{成绩：专业前15\%}{}{}
 
 
 \section{研究项目}
 \cvitem{NTCIR-11 Temporalia}{时间信息检索评测：在搜索引擎的搜索过程中，考虑查询的时间属性和结果文档中的时间信息，使得搜索结果既内容相关又符合时间要求。我们的评测结果获得国际第二, 并发表论文一篇\cite{hou2014hitsz}。
-\newline	主要工作：使用Solr对文档建立索引和检索，抽取问句和搜索结果的特征,包括文本特征和时间特征，使用Learning to Rank算法对搜索结果进行重排序。}
+\newline	主要工作：使用Solr对文档建立索引和检索，抽取问句和搜索结果的特征,包括文本特征和时间特征，使用Learning to Rank算法对搜索结果进行重排序。
+\newline 	工作亮点：1. 将查询按照时间属性分类（过去、最近、将来、与时间无关）；
+\newline  2. 引入时间因素， 使答案既内容相关又时间相关。 }
 \cvitem{SemEval-2015 task3}{社区问答中答案选择任务(Answer Selection in Community Question Answering)，是指在社区问答中，对每个问题的答案质量进行判定。该任务包含两种语言：Arabic和English。在Arabic子任务中，我们组（HITSZ-ICRC）取得了第三名，在English子任务中，获得了第二名 \cite{hou-EtAl:2015:SemEval1}。
-\newline	主要工作：抽取文本特征，比如BOW、tf-idf、共现词等，也尝试过结合word2vec词向量特征，使用集成型方法进行分类。}
-\cvitem{SemEval-2015 task5}{QA TempEval 是指以问答的方式来评价对文本中时间信息的理解程度。主要涉及三个方面：1. 文本中时间的抽取和归一化，2. 事件的抽取， 3. 事件和时间、事件与事件之间关系的抽取\cite{hou-EtAl:2015:SemEval2}。}
+\newline	主要工作：抽取文本特征，比如BOW、tf-idf、共现词等，也尝试过结合word2vec词向量特征，设计分类算法进行分类。
+\newline 	难点和亮点：1. 样本不平衡问题（Good，Protential， Bad，Dialogue）），设计了多种样本平衡算法；
+\newline 2. 设计了一个树形层次分类方法，结合随机森林（Random Forest）、支持向量机（SVM）等算法。}
+\cvitem{SemEval-2015 task5}{QA TempEval 是指以问答的方式来评价对文本中时间信息的理解程度。主要工作：1. 文本中时间的抽取和归一化，2. 事件的抽取， 3. 事件和时间、事件与事件之间关系的抽取\cite{hou-EtAl:2015:SemEval2}。
+	\newline 主要难点：1. 时间短语的识别； 2. 关系的抽取；亮点：采取bagging方式来合并多个标注结果。}
 
-\cvitem{开源Github}{为Stanford CoreNLP,timeml-qa,caevo等项目提交过代码，主要是修复一些bug等。}
+\cvitem{开源Github}{1. 基于隐马尔科夫模型的中文分词工具(HMMSegment)，python实现；
+\newline 2. 实现常见的机器学习算法，如SVM，Adaboost，Kmeans，LDA等;
+\newline 3. 为Stanford CoreNLP,timeml-qa,caevo等项目提交过代码，主要是修复一些bug等。}
 
 %\section{已发表论文}
 %, Yongshuai Hou, Xiaolong Wang, Qingcai Chen, Man Li, Cong Tan - , 2014.Machine Learning and Cybernetics 481, 
@@ -107,10 +114,10 @@
 
 
 \section{专业技能 }
-\cvitem{\hello}{熟悉C++、Java、Python  等编程语言；}
-\cvitem{\hello}{熟悉主要的数据结构和算法。本科期间获得浙江省第八届程序设计竞赛铜牌。}
-\cvitem{\hello}{了解常用机器学习算法、自然语言处理等相关技术；熟练使用机器学习工具：libsvm，scikit-learn，weka等。}
-\cvitem{\hello}{熟悉Linux环境，掌握Linux下常用命令及开发调试方法，熟悉git等版本管理工具}
+\cvitem{\hello}{掌握C++、Java、Python  等编程语言；}
+\cvitem{\hello}{掌握主要的数据结构和算法。本科期间获得浙江省第八届程序设计竞赛铜牌。}
+\cvitem{\hello}{掌握常用机器学习算法、自然语言处理等相关技术；掌握多种分类算法，如SVM，Random Forest；熟练使用机器学习工具：libsvm，scikit-learn，weka等；了解深度学习（Deep Learning）。}
+\cvitem{\hello}{熟悉Linux环境，了解常见的命令；熟悉git等版本管理工具}
 
 
 \section{所获奖励和证书 }
